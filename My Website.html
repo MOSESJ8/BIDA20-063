@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>MY WEBSITE</title>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section id="hero">
+       <div class="hero container">
+       <div>
+            <h1>WELCOME <span></span></h1>
+            <h1>TO KIGALI <span></span></h1>
+            <h1>RWANDA <span></span></h1>
+            <a href="#" type="button" class="cta">Portfolio</a>
+       </div>
+       </div>
+  </section>
+  <!-- End of Hero Section -->
+
+  <!-- About section -->
+  <section id="About">
+       <div class="class container">
+            <div class="about top">
+                 <h1 class="class about-tittle">Ab<span>o</span>ut</h1>
+                 <p>Kigali (Kinyarwanda pronunciation: is the capital and largest city of Rwanda. 
+                      It is near the nation's geographic centre in a region of rolling hills, with a series of valleys and ridges joined by steep slopes. 
+                      The city has been Rwanda's economic, cultural, and transport hub since it became the capital following independence from Belgian rule in 1962</p>
+            </div>
+            <div class="about bottom">
+               <div class="about-item">
+                    <div class="icon"><img src="https://img.icons8.com/carbon-copy/100/000000/about.png"/></
+                    div>
+                    <h2>History and facts</h2>
+                    <p>Kigali was a trade centre (after 1895) during the German colonial administration
+                   and became a regional centre during the Belgian colonial period (1919–62). 
+                    It became the capital upon Rwanda's independence in 1962. 
+                    In 1994 thousands of Tutsi in Kigali were killed by Hutu gangs and the Rwandan army.
+                    Kigali is the capital city of Rwanda; it is the biggest city of Rwanda with a population of 850,000.
+                    The city is among the cleanest and well organized cities in Africa. 
+                    </p>
+               </div>
+               <div class="about-item">
+                    <div class="icon"><img src="https://img.icons8.com/carbon-copy/100/000000/about.png"/></
+                    div>
+                    <h2>History and facts</h2>
+                    <p>Kigali is pretty, politically stable and 
+                         hospitable people willing to welcome foreigner and to feed them with 
+                         first hand information concerning Rwanda. While in Kigali you’ll hear
+                          people speaking Kinyarwanda, English, and FrenchKigali International Airport is found in Kigali city centre. 
+                          Therefore, air transport is easy in Rwanda since the Airport works 24 hours all year round.
+                          The parliamentary building is found in Kigali city – Rwanda legislators
+                           find it easy to reach the building for meetings. 
+                           In other words, Kigali city is an administration centre where by other 
+                          government headquarters are found with in.</p>
+               </div>
+          </div>
+       </div>
+  </section>
+  <!-- End of About section -->
+
+
+  <!-- LIFESTYLE Section-->
+  <section id="LIFESTYLE">
+       <div class="lifestyle container">
+       <div class="lifestyle-header">
+            <h1 class="section-tittle">Lifestyle</h1>
+       </div>
+       <div class="all lifestyles">
+            <div class="lifestyle item">
+                 <div class="Lifestyle-info">
+                 <h1>Tourist attraction</h1>
+                 <h2>cleanest city in Africa</h2>
+                 <p>KIGALI is the major arrival point for tourists visiting Rwandas national
+                      parks and tracking its own sites of intrest such as the Kigali Genocide Memorial
+                      and ecotourist facilities, as well as bars, coffee shops and resturants. most of tourists
+                      attraction sites in Kigali are: the Kigali Genocide Memorial, inema arts center,Rwanda arts mesuum
+                      kimironko market,amhoro staduim and hotel des mille collines.
+                 </p>
+                 </div>
+                 <div class="Lifestyle-img">
+                    <img src="./17.jpg" alt="img">
+               </div>         
+               </div>
+            </div>
+            <div class="lifestyle item">
+               <div class="Lifestyle-info">
+               <h2>Fashion</h2>
+               <h2>made in Rwanda</h2>
+               <p>KIGALI is fast becoming Africa's leading fashion hub. with a ne generation
+                    of young designers turning the country's rich culture for inspiration to
+                    create beatuful, wearable pieces coveted by visitors and locals.
+                    the result is fashionable clothing inspired by local traditions but with
+                    sights set firmly on the future. culture trip speaks to the founder of one of 
+                    the city's first fashion tour's about their pick of the best designers and top
+                    boutiques in the Rwandan capital of Kigali.
+               </p>
+               </div>
+               <div class="fashion-img">
+                    <img src="./18.jpg" alt="img">
+               </div>
+             </div>
+          </div> 
+       </div>
+       </div>
+  </section>
+  <!-- End of LIFESTYLE Section-->
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
